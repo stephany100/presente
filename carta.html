@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carta Especial</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&family=Nunito:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"> 
+</head>
+
+
+<body class="letter-page">
+  <audio id="bgMusic" src="musica.mp3" loop preload="auto"></audio>
+  <button class="music-toggle" type="button" aria-label="Ligar ou desligar música">Música: OFF</button>
+
+  <!-- Carta especial com detalhes dourados inspirados na Arena -->
+  <main class="letter-stage">
+    <section class="letter-card" aria-labelledby="letter-title">
+      <div class="letter-seal">Arena</div>
+      <h1 id="letter-title">Para você ❤️</h1>
+      <p class="letter-text">Na Arena da vida, você é minha melhor vitória. Obrigada por estar comigo sempre.</p>
+
+      <!-- Foto local do casal na carta -->
+      <figure class="royale-photo" aria-label="Foto especial do casal">
+        <div class="couple-frame">
+          <img class="couple-image" src="casal.jpg" alt="Foto do casal">
+        </div>
+      </figure>
+
+      <div class="letter-actions">
+        <button class="gold-button" type="button" data-action="back">Voltar para o presente</button>
+      </div>
+    </section>
+  </main>
+
+  <!-- Camada usada pelo JavaScript para partículas flutuantes -->
+  <div class="particle-layer" aria-hidden="true"></div>
+  <script src="script.js"></script>
+</body>
+
+
+</html>

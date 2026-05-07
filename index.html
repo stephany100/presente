@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Presente da Arena</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&family=Nunito:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="gift-page">
+  <audio id="bgMusic" src="musica.mp3" loop preload="auto"></audio>
+  <button class="music-toggle" type="button" aria-label="Ligar ou desligar música">Música: OFF</button>
+
+  <!-- A página inicial começa diretamente com a caixa de presente -->
+  <main class="arena-shell">
+    <section class="gift-card" aria-labelledby="gift-title">
+      <h1 id="gift-title" class="sr-only">Presente da Arena</h1>
+
+      <!-- Puxe a ponta dourada do laço para abrir a caixa -->
+      <div class="present-wrap" aria-label="Caixa de presente interativa">
+        <div class="present-glow"></div>
+        <div class="present-lid">
+          <div class="bow bow-left"></div>
+          <button class="bow-knot" type="button" aria-label="Puxar o laço do presente">
+            <span>Puxe</span>
+          </button>
+          <div class="bow bow-right"></div>
+        </div>
+        <div class="present-box">
+          <div class="ribbon ribbon-vertical"></div>
+          <div class="ribbon ribbon-horizontal"></div>
+          <div class="gift-face">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+      <p class="gift-hint">puxe o laço dourado</p>
+    </section>
+  </main>
+
+  <!-- Camada usada pelo JavaScript para corações e brilhos -->
+  <div class="particle-layer" aria-hidden="true"></div>
+  <script src="script.js"></script>
+</body>
+</html>
